@@ -1,0 +1,32 @@
+<catalog xmlns="http://localhost/schemas/xsd/Catalog" xmlns:phtal="http://localhost/schemas/xsd/Phtal">
+    <name>summerCatalog</name>
+    <items>1</items>
+    <phtal:links rel="about" href="http://localhost/catalog/about">
+        <phtal:instructions protocol="http">
+            <phtal:responseContent>application/phtal+xml;profile="http://localhost/profiles/catalog#about"</phtal:responseContent>
+        </phtal:instructions>
+    </phtal:links>
+    <phtal:links rel="item" href="http://localhost/catalog/items/23-1289">
+        <phtal:instructions protocol="http">
+            <phtal:method>GET</phtal:method>
+            <phtal:requestContentRequired>false</phtal:requestContentRequired>
+            <phtal:responseContent>application/phtal+xml;profile="http://localhost/profiles/catalog#catalogItem"</phtal:responseContent>
+        </phtal:instructions>
+        <phtal:partial profile="http://localhost/profiles/catalog#catalogItem">
+          <item:Item xmlns:item="http://localhost/schemas/xsd/CatalogItem">
+            <item:namex>soccerBall</namex>
+            <item:price>$45</price>
+          </item:Item>
+        </phtal:partial>
+    </phtal:links>
+    <phtal:links rel="http://localhost/rels/addItem" href="http://localhost/catalog/items">
+        <phtal:instructions protocol="http">
+            <phtal:method>POST</phtal:method>
+            <phtal:security type="apiKey" name="auth-api-key" in="header"/>
+            <phtal:requestContentRequired>true</phtal:requestContentRequired>
+            <phtal:requestContent>application/phtal+xml;profile="http://localhost/profiles/catalog#addItemRequest"</phtal:requestContent>
+            <phtal:responseContent>application/phtal+xml;profile="http://localhost/profiles/catalog#addItemResult"</phtal:responseContent>
+        </phtal:instructions>
+    </phtal:links>
+    <phtal:script src="http://localhost/scripts/catalogScript" type="text/javascript"/>
+</catalog>
