@@ -1,6 +1,6 @@
 # PHTAL - Profiled HyperText Application Language
 * Author: Jose Montoya
-* Created: 2018-07-03
+* Created: 2018-05-28
 
 ## Summary
 In a REST/HTTP application the origin server/user agent pair rely on a shared out-of-band understanding of communication protocols, URI schemes, non-generic media types definitions and typed link relations. In-band, the agent requires instructions from the origin server on how to interact with a given resource.
