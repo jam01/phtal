@@ -80,7 +80,7 @@ type: unsafe
 ```
 
 #### Profiles
-Media types are currently mostly used to indicate generic data transfer formats, ie. xml or json. The [intent of media type metadata](https://www.w3.org/2001/tag/doc/mime-respect-20130422#media-type) on HTTP interactions is not only to indicate data format but the sender's preferred interpretation of that format, ie. an application specific format. PHTAL attempts to complement generic media types with a profile that extends its semantics to a specific application. This is based on ALPS profiles and HAL's specification of a profile parameter, whereas PHTAL makes the profile parameter required and defines a more concrete take on what a profile should be.
+Media types are currently mostly used to indicate generic data transfer formats, ie. xml or json. The [intent of media type metadata](https://www.w3.org/2001/tag/doc/mime-respect-20130422#media-type) on HTTP interactions is not only to indicate data format but the sender's preferred interpretation of that format, ie. an application specific format. PHTAL attempts to complement generic media types with a profile that extends its semantics to a specific application. This is based on ALPS profiles and HAL's specification of a profile parameter, whereas PHTAL makes the profile parameter required and defines a more concrete take on what a profile should be. The profile element is specifically based on OpenAPI [media type object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#media-type-object).
 
 ```yaml
 description: A store's catalog item.
