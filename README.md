@@ -84,15 +84,15 @@ Media types are currently mostly used to indicate generic data transfer formats,
 
 ```yaml
 description: A store's catalog item.
-application/xml:
-  schema:
-    type: xsd
-    externalValue: http://localhost/jam01/schemas/xsd/CatalogItem
-  examples:
-    productItem:
-      summary: A simple example that shows a product item, a soccer ball.
-      externalValue: http://localhost/jam01/examples/xml/SoccerBall
-    serviceItem:
-      description: This item shows all the additional items that could be present on a catalog item for a service, these kind of items will only be available...
-      externalValue: http://localhost/jam01/examples/xml/CarWash
+baseType: application/xml
+schema:
+  type: xsd
+  externalValue: http://localhost/jam01/schemas/xsd/CatalogItem
+examples:
+  productItem:
+    summary: A simple example that shows a product item, a soccer ball.
+    externalValue: http://localhost/jam01/examples/xml/SoccerBall
+  serviceItem:
+    description: This item shows all the additional items that could be present on a catalog item for a service, these kind of items will only be available...
+    externalValue: http://localhost/jam01/examples/xml/CarWash
 ```
