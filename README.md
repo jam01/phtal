@@ -5,7 +5,7 @@
 ## Summary
 In a REST/HTTP application the origin server/user agent pair rely on a shared out-of-band understanding of communication protocols, URI schemes, non-generic media types definitions and typed link relations. In-band, the agent requires instructions from the origin server on how to interact with a given resource.
 
-PHTAL (pronounced fatal) is an opinionated evolution from the [HAL media type](http://stateless.co/hal_specification.html) that draws from various other projects to provide all that is necessary for truly REST/HTTP applications. Those projects include [ALPS](http://alps.io/), [Hyperschema](https://datatracker.ietf.org/doc/draft-handrews-json-schema-hyperschema/), and [  HYDRA](https://www.markus-lanthaler.com/hydra/).
+PHTAL (pronounced fatal) is an opinionated evolution from the [HAL media type](http://stateless.co/hal_specification.html) that draws concepts from various other projects to provide all that is necessary for truly REST/HTTP applications. Those projects include [ALPS](http://alps.io/), [Hyperschema](https://datatracker.ietf.org/doc/draft-handrews-json-schema-hyperschema/), and [  HYDRA](https://www.markus-lanthaler.com/hydra/).
 
 ## General Description
 Communication protocols and URI schemes are mature and generally well understood elements of a REST/HTTP application, PHTAL makes no contributions here.
